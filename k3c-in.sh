@@ -3,7 +3,7 @@ git init
 git clone https://github.com/rancher/k3c
 cd k3c
 make build
-./bin/k3c daemon --group=$(id -g)
+./bin/k3c daemon --group=$(id -g) &
 
 
 #docker pull rancher/k3s
