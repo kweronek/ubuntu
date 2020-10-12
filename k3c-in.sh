@@ -1,10 +1,9 @@
-
-
+#
 git init
 git clone https://github.com/rancher/k3c
 cd k3c
 make build
-# make package
+./bin/k3c daemon --group=$(id -g)
 
 
 #docker pull rancher/k3s
@@ -14,7 +13,7 @@ make build
 #docker exec -it -e K3C_ADDRESS=/run/k3s/containerd/containerd.sock k3s --s
 
 #./bin/k3c daemon --cni/bin=/bin --bootstrap-image=docker.io/rancher/k3c:dev
-./bin/k3c daemon --group=$(id -g)
+
 
 	
 	
