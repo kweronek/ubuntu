@@ -1,8 +1,8 @@
-# sudo -s
+# 
 apt update
 
-## insstall make
-apt install make
+## install make
+apt install -y make
 make -v
 
 ## install
@@ -32,11 +32,3 @@ apt-get install -y pkg-config
 #sudo usermod -aG docker root
 #sudo usermod -aG docker ubuntu
 #docker -v
-
-
-
-
-
-
-	
-	
